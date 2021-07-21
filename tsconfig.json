@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    /* Basic Options */
+    // "incremental": true,                         
+    /* Enable incremental compilation */
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    // "outFile": "./",                             
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true
+  },
+  "include": [
+    "./src/**/*.*"
+  ],
+  "exclude": [
+    "./tests/**/*.test.ts",
+    "./node_modules"
+  ]
+}
