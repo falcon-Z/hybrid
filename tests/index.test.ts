@@ -2,7 +2,7 @@ import { Server } from "@hapi/hapi";
 import { describe, it, beforeEach, afterEach } from "mocha";
 import chai, { expect } from "chai";
 
-import { init } from "../src/bin/server";
+import { init } from "../src/bin/server.config";
 
 describe("smoke test", async () => {
     let server: Server;
@@ -20,6 +20,6 @@ describe("smoke test", async () => {
             url: "/"
         });
         expect(res.statusCode).to.equal(200);
-        expect(res.result).to.equal("Hello! Nice to have met you.");
+        expect(res.result).to.equal("Server works");
     });
 })

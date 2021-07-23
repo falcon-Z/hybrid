@@ -7,7 +7,7 @@
         "dev:tsc": "tsc --watch -p .",
         "dev:serve": "nodemon -e js -w dist dist/app.js",
         "dev": "run-p dev:*",
-        "test": "mocha -r ts-node/register tests/**/*.test.ts"
+        "test": "SET NODE_ENV='test' && mocha -r ts-node/register tests/**/*.test.ts"
     },
     "author": "sai madhan",
     "license": "ISC",
